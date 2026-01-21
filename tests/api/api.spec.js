@@ -7,6 +7,7 @@ const token = process.env.BEARER_TOKEN
 
 let userId
 let userIdResponse
+let postId
 
 test.describe.configure({ mode: 'serial' })
 
@@ -79,6 +80,8 @@ test.describe('Automation exercise', () =>{
         console.log('Created post: ', responseBody)
 
         userIdResponse= responseBody.user_id
+        postId = responseBody.id
+        expect(postId).toBeDefined()
         expect(userIdResponse).toBeDefined()
         expect(userIdResponse).toBe(userId)
         
