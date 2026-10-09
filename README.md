@@ -1,6 +1,6 @@
 # QA Automation Testing - API & E2E
 
-Automated testing project using Playwright for API and End-to-End testing.
+Automated testing project for a interview using Playwright for API and End-to-End testing.
 
 ---
 
